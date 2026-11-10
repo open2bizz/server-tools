@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="access_auditlog_rule_user" model="ir.access">
+        <field name="name">auditlog_rule_user</field>
+        <field name="model_id" ref="model_auditlog_rule" />
+        <field name="group_id" ref="group_auditlog_user" />
+        <field name="operation">r</field>
+    </record>
+    <record id="access_auditlog_log_user" model="ir.access">
+        <field name="name">auditlog_log_user</field>
+        <field name="model_id" ref="model_auditlog_log" />
+        <field name="group_id" ref="group_auditlog_user" />
+        <field name="operation">r</field>
+    </record>
+    <record id="access_auditlog_log_line_user" model="ir.access">
+        <field name="name">auditlog_log_line_user</field>
+        <field name="model_id" ref="model_auditlog_log_line" />
+        <field name="group_id" ref="group_auditlog_user" />
+        <field name="operation">r</field>
+    </record>
+    <record id="access_auditlog_http_session_user" model="ir.access">
+        <field name="name">auditlog_http_session_user</field>
+        <field name="model_id" ref="model_auditlog_http_session" />
+        <field name="group_id" ref="group_auditlog_user" />
+        <field name="operation">r</field>
+    </record>
+    <record id="access_auditlog_http_request_user" model="ir.access">
+        <field name="name">auditlog_http_request_user</field>
+        <field name="model_id" ref="model_auditlog_http_request" />
+        <field name="group_id" ref="group_auditlog_user" />
+        <field name="operation">r</field>
+    </record>
+    <record id="access_auditlog_rule_manager" model="ir.access">
+        <field name="name">auditlog_rule_manager</field>
+        <field name="model_id" ref="model_auditlog_rule" />
+        <field name="group_id" ref="group_auditlog_manager" />
+        <field name="operation">crud</field>
+    </record>
+    <record id="access_auditlog_log_manager" model="ir.access">
+        <field name="name">auditlog_log_manager</field>
+        <field name="model_id" ref="model_auditlog_log" />
+        <field name="group_id" ref="group_auditlog_manager" />
+        <field name="operation">crud</field>
+    </record>
+    <record id="access_auditlog_log_line_manager" model="ir.access">
+        <field name="name">auditlog_log_line_manager</field>
+        <field name="model_id" ref="model_auditlog_log_line" />
+        <field name="group_id" ref="group_auditlog_manager" />
+        <field name="operation">crud</field>
+    </record>
+    <record id="access_auditlog_http_session_manager" model="ir.access">
+        <field name="name">auditlog_http_session_manager</field>
+        <field name="model_id" ref="model_auditlog_http_session" />
+        <field name="group_id" ref="group_auditlog_manager" />
+        <field name="operation">crud</field>
+    </record>
+    <record id="access_auditlog_http_request_manager" model="ir.access">
+        <field name="name">auditlog_http_request_manager</field>
+        <field name="model_id" ref="model_auditlog_http_request" />
+        <field name="group_id" ref="group_auditlog_manager" />
+        <field name="operation">crud</field>
+    </record>
+    <record id="access_auditlog_autovacuum" model="ir.access">
+        <field name="name">access_auditlog_autovacuum</field>
+        <field name="model_id" ref="model_auditlog_autovacuum" />
+        <field name="group_id" ref="group_auditlog_user" />
+        <field name="operation">crud</field>
+    </record>
+    <record id="access_auditlog_log_line_view_manager" model="ir.access">
+        <field name="name">auditlog_log_line_view</field>
+        <field name="model_id" ref="model_auditlog_log_line_view" />
+        <field name="group_id" ref="base.group_erp_manager" />
+        <field name="operation">r</field>
+    </record>
+</odoo>
